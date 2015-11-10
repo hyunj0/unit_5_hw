@@ -21,8 +21,11 @@ public class RecursionProblem
                 return false;
             }
             word = word.substring(1, index) + word.substring(index + 1, word.length());
+            // don't leave print statements in the code
             System.out.println(word);
             return isEvenWord(word);
         }
     }
+    
+    // this is good clean code, I would test with more examples next time
 }
